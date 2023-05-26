@@ -1,0 +1,44 @@
+.activity {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .activity__section {
+    width: 400px;
+    background-color: #f4f6f8;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .activity__section__title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .activity__section__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .activity__card {
+    height: 100%;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .activity {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .activity__section {
+      margin-bottom: 20px;
+    }
+  
+    .activity__section__content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
